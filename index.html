@@ -11,6 +11,7 @@
             <ul>
                 <li v-for="(email, index) in elencoEmail" 
                 :key="index"
+                v-if="elencoEmail.length > 9"
                 >{{email}}</li>
             </ul>
         </div>
